@@ -212,6 +212,20 @@ extern const char sHtmlResultBodyLow[] =
 extern const char sJsonApiThdHashrate[] =
 	"[%s,%s,%s]";
 
+extern const char sPromCommonHeader [] =
+       " %s \n";
+
+extern const char sPromHashrateTableRow [] =
+       "xmr_stak_amd{thread_id=\"%u\",interval=\"10.0\" } %s\n"
+       "xmr_stak_amd{thread_id=\"%u\",interval=\"60.0\" } %s\n"
+       "xmr_stak_amd{thread_id=\"%u\",interval=\"900.0\" } %s\n";
+
+extern const char sPromHashrateBodyLow [] =
+       "xmr_stak_amd_total{interval=\"10.0\"} %s\n"
+       "xmr_stak_amd_total{interval=\"60.0\"} %s\n"
+       "xmr_stak_amd_total{interval=\"900.0\"} %s\n";
+
+
 extern const char sJsonApiResultError[] =
 	"{\"count\":%llu,\"last_seen\":%llu,\"text\":\"%s\"}";
 
